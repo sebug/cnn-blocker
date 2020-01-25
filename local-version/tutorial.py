@@ -37,3 +37,5 @@ K_posts = [post for (post, label) in zip(K_all, sel_labels) if label == 0]
 K_ads = [post for (post, label) in zip(K_all, sel_labels) if label == 1]
 
 K_train, K_test, y_train, y_test = train_test_split(K_all, sel_labels, test_size=0.2, random_state=42)
+
+from tensorboardX import SummaryWriter
